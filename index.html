@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avishkar Kedar — Portfolio</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Animations -->
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in { animation: fadeIn 1.2s ease forwards; }
+    .slide-up { animation: slideUp 1.1s ease forwards; }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+
+<!-- NAVBAR -->
+<header class="bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-md fade-in">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-500 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+        AK
+      </div>
+      <div>
+        <p class="text-lg font-bold">Avishkar Kedar</p>
+        <p class="text-xs text-gray-500">AI & DS Student</p>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex gap-8 text-sm font-semibold">
+      <a href="#about" class="hover:text-teal-600">About</a>
+      <a href="#skills" class="hover:text-teal-600">Skills</a>
+      <a href="#projects" class="hover:text-teal-600">Projects</a>
+      <a href="#certs" class="hover:text-teal-600">Certifications</a>
+      <a href="#contact" class="hover:text-teal-600">Contact</a>
+    </nav>
+
+    <a href="#contact" class="md:hidden px-4 py-2 bg-teal-600 text-white rounded-lg">Contact</a>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="home" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+
+  <!-- LEFT TEXT -->
+  <div class="slide-up">
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+      Hi, I'm <span class="text-teal-600">Avishkar Kedar</span>
+    </h1>
+
+    <p class="text-lg text-gray-700 mt-6">
+      A passionate B.Tech (AI & DS) student from 
+      <strong>Zeal College of Engineering</strong> skilled in
+      <span class="text-teal-500 font-semibold">Python, Data Science, AI, Web Development & Cloud</span>.
+    </p>
+
+    <div class="mt-8 flex gap-4">
+      <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-teal-600 to-cyan-500 text-white rounded-lg shadow-lg hover:scale-105 transition">
+        🚀 View Projects
+      </a>
+      <a href="mailto:avikedar11@gmail.com" class="px-6 py-3 border border-teal-600 text-teal-600 rounded-lg hover:bg-teal-50 transition">
+        📩 Email Me
+      </a>
+    </div>
+  </div>
+
+  <!-- RIGHT CARD -->
+  <div class="bg-white p-8 rounded-2xl shadow-xl fade-in hover:-translate-y-2 hover:shadow-2xl transition">
+    <h3 class="text-xl font-semibold mb-4">🧑‍🎓 About Me</h3>
+    <ul class="text-sm text-gray-700 space-y-2">
+      <li><strong>Name:</strong> Avishkar Kedar</li>
+      <li><strong>Course:</strong> B.Tech in AI & DS</li>
+      <li><strong>Year:</strong> Second Year (SY)</li>
+      <li><strong>College:</strong> Zeal College of Engineering</li>
+      <li><strong>Location:</strong> Pune</li>
+      <li><strong>Email:</strong> <a href="mailto:avikedar11@gmail.com" class="text-teal-600 underline">avikedar11@gmail.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+917350720383" class="text-teal-600 underline">+91 73507 20383</a></li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold mb-8 fade-in">⚙️ Skills</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-3 transition slide-up">
+      <h4 class="font-semibold mb-3">Programming Languages</h4>
+      <ul class="text-gray-700 text-sm space-y-1">
+        <li>• Python</li>
+        <li>• C / C++</li>
+        <li>• Java</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-3 transition slide-up">
+      <h4 class="font-semibold mb-3">Data & AI Skills</h4>
+      <ul class="text-gray-700 text-sm space-y-1">
+        <li>• Machine Learning</li>
+        <li>• Pandas, NumPy</li>
+        <li>• Matplotlib, Power BI</li>
+        <li>• SQL Databases</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-3 transition slide-up">
+      <h4 class="font-semibold mb-3">Web / Cloud / Tools</h4>
+      <ul class="text-gray-700 text-sm space-y-1">
+        <li>• HTML, CSS</li>
+        <li>• WordPress, Wix</li>
+        <li>• AWS / Azure Basics</li>
+        <li>• Git, GitHub, VS Code</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold mb-8 fade-in">📂 Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <!-- PROJECT 1 -->
+    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition hover:-translate-y-3 slide-up">
+      <h3 class="text-lg font-semibold">📘 Student Expense Tracker</h3>
+      <p class="text-sm text-gray-700 my-3">
+        A full-stack expense management app where students can track daily spending,
+        view statistics, and manage monthly budgets. Includes authentication and 
+        visual charts.
+      </p>
+
+      <p class="text-sm"><strong>Tech Stack:</strong> Node.js • Express • MongoDB • Tailwind CSS • JWT</p>
+
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="px-4 py-2 bg-teal-600 text-white rounded hover:scale-105 transition">GitHub</a>
+        <a href="#" class="px-4 py-2 border rounded hover:bg-gray-100 transition">Screenshot</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition hover:-translate-y-3 slide-up">
+      <h3 class="text-lg font-semibold">📗 Air Pollution Level Prediction</h3>
+      <p class="text-sm text-gray-700 my-3">
+        An ML model that predicts AQI using features like PM2.5, PM10, NOx, SO₂ & CO.
+        Built for environmental analysis and pollution alert systems.
+      </p>
+
+      <p class="text-sm"><strong>Tech Stack:</strong> Python • Pandas • NumPy • Scikit-learn • Matplotlib</p>
+
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="px-4 py-2 bg-teal-600 text-white rounded hover:scale-105 transition">GitHub</a>
+        <a href="#" class="px-4 py-2 border rounded hover:bg-gray-100 transition">Screenshot</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs" class="max-w-6xl mx-auto px-6 py-16 fade-in">
+  <h2 class="text-3xl font-bold mb-8">🏆 Certifications & Achievements</h2>
+
+  <ul class="bg-white p-6 rounded-xl shadow space-y-2 text-sm text-gray-700">
+    <li>• Python Basics – HackerRank</li>
+    <li>• SQL Intermediate – HackerRank</li>
+    <li>• Machine Learning – Coursera</li>
+    <li>• Hackathon Participation</li>
+    <li>• College Tech Fest – Winner / Participant</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold mb-8 fade-in">📞 Contact Me</h2>
+
+  <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition grid md:grid-cols-2 gap-10">
+
+    <div class="text-sm text-gray-700 space-y-3">
+      <p class="text-base">Have a project idea? Let's connect!</p>
+      <p><strong>Email:</strong> 
+        <a href="mailto:avikedar11@gmail.com" class="text-teal-600 underline">avikedar11@gmail.com</a>
+      </p>
+      <p><strong>Phone:</strong> 
+        <a href="tel:+917350720383" class="text-teal-600 underline">+91 73507 20383</a>
+      </p>
+    </div>
+
+    <form class="space-y-3">
+      <input class="w-full border rounded px-3 py-2" placeholder="Your Name" />
+      <input class="w-full border rounded px-3 py-2" placeholder="Your Email" />
+      <textarea class="w-full border rounded px-3 py-2" rows="4" placeholder="Message"></textarea>
+      <button class="px-5 py-2 bg-teal-600 text-white rounded hover:scale-105 transition">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white py-6 mt-10 shadow-inner">
+  <p class="text-center text-gray-600 text-sm">
+    © 2025 Avishkar Kedar | Designed with ❤️ using Tailwind CSS
+  </p>
+</footer>
+
+</body>
+</html>
